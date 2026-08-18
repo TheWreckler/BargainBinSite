@@ -1,0 +1,17 @@
+{
+  "cards" :
+  [
+    {
+    "name": "The Western Kingdoms (Hex)",
+      "description": "Hex Map for the Western Kingdoms",
+      "button_text": "Open Tracker",
+      "link": "https://bargainbin.quest/Earthdawn/Maps/WesternKingdoms/"
+    },
+    {
+    "name": "Western Kingdoms (World)",
+      "description": "Interactive Maps for our current Earthdawn Campaigns",
+      "button_text": "Open Map",
+      "link": "https://bargainbin.quest/Earthdawn/EarthdawnMaps"
+    }
+  ]
+}

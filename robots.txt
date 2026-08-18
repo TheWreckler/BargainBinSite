@@ -1,0 +1,11 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+

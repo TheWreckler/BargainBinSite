@@ -1,0 +1,23 @@
+{
+  "cards" :
+  [
+    {
+    "name": "BloodBowl",
+      "description": "NAFLM Blood Bowl League Tracker",
+      "button_text": "Smash!",
+      "link": "https://bargainbin.quest/BloodBowl"
+    },
+    {
+    "name": "Earthdawn Creature Tracker",
+      "description": "Creature Tracker for Earthdawn including automatic Mask application",
+      "button_text": "Open Tracker",
+      "link": "https://bargainbin.quest/Earthdawn/CreatureTracker"
+    },
+    {
+    "name": "Earthdawn Maps",
+      "description": "Interactive Maps for our current Earthdawn Campaigns",
+      "button_text": "Open Map",
+      "link": "https://bargainbin.quest/Earthdawn/EarthdawnMaps"
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+/* =Base */
+input[type="text"] {
+    width: 30%;
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #292929;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+    width: 75%;
+}
+
+body {
+    font-family: sans-serif;
+    color: $iron;
+    background-color: $dorian;
+}
+
+a {
+    color: $iron;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content {
+    margin-top: -20px;
+    word-wrap: anywhere;
+}
+
+.content .headerlink {
+    display: none;
+    float: left;
+    padding-right: 4px;
+    margin-left: -30px;
+
+    &:before {
+        content: "\f0c1";
+        font-size: smaller;
+        font-family: "ForkAwesome";
+    }
+}
+
+.content h1:hover .headerlink,
+.content h2:hover .headerlink,
+.content h3:hover .headerlink {
+    display: block;
+}
+
+.content > h1,
+h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 7px;
+}
+
+.content > h3 {
+    font-size: 21px;
+}
+
+.content > h4 {
+    font-size: 19px;
+}
+
+.content a {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.content p a::after {
+    content: "\f08e";
+    font-size: 15px;
+    font-family: "ForkAwesome";
+    margin-left: 5px;
+}
+
+.content li a::after {
+    content: "\f08e";
+    font-size: 15px;
+    font-family: "ForkAwesome";
+    margin-left: 5px;
+}
+
+.footnotes {
+    border-top: 2px solid #808080;
+}
+
+.footnote {
+    text-decoration: underline !important;
+}
+
+a.footnote::after {
+    display: none;
+}
+
+a.reversefootnote::after {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+p.center {
+    text-align: center;
+}
+
+ul {
+    font-size: 17px;
+    line-height: 27px;
+}
+
+ol {
+    font-size: 17px;
+    line-height: 27px;
+}
+
+img {
+    margin: 40px auto;
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.content img {
+    position: relative;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translate3d(1px, -5px, 0px);
+    }
+    &:active {
+        transform: scale(1.4);
+    }
+}
+
+.post-image {
+    display: none;
+}
+
+.flex-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 0.7em;
+    background-color: #323234;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 5px;
+    background: #4f4f4fff;
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    & .buttons {
+        margin-top: auto;
+    }
+
+    & p {
+        font-size: 17px;
+        text-align: left;
+        line-height: 27px;
+    }
+
+    &:hover {
+        box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
+.button {
+    border-radius: 8px;
+    border: 0px;
+    color: #4f4f4f;
+    background-color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #fff;
+
+    &:hover {
+        background-color: #4f4f4f;
+        color: #ffffff;
+    }
+}
+
+.publish-date {
+    color: $iron;
+    font-weight: bold;
+}
+
+strong {
+    color: $iron;
+}
+
+blockquote {
+    letter-spacing: 1px;
+    margin: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0px;
+    border-left: 4px solid #fff;
+    p {
+        margin-left: 20px;
+        font-size: 20px;
+        color: #bcbcbc;
+        font-weight: 400;
+    }
+    ul {
+        color: #bcbcbc;
+    }
+}
+
+/* =Header */
+.wrapper {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 0 30px;
+}
+
+.header {
+    overflow: hidden;
+    font-family: serif;
+}
+
+.navigation {
+    float: left;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: 700;
+    color: $iron;
+}
+
+.menu {
+    color: $cloudy;
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 6px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.menu-entry {
+    display: inline-block;
+    margin-right: 35px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.menu-entry a {
+    font-weight: 400;
+}
+
+.social-links {
+    float: right;
+    font-size: 24px;
+    color: $cloudy;
+    list-style-type: none;
+}
+
+.social-links-entry {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* =Titles */
+.page-title {
+    margin-top: 100px;
+    margin-bottom: 75px;
+    text-align: center;
+    font-family: serif;
+}
+
+.page-title-text {
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.page-title-subtitle {
+    font-weight: 400;
+    font-family: monospace;
+    font-size: 22px;
+    color: $cloudy;
+}
+
+.post-title {
+    margin-bottom: 100px;
+    font-family: serif;
+}
+
+.post-title-text {
+    font-size: 40px;
+}
+
+.post-title-subtitle {
+    font-size: 20px;
+}
+
+/* =Footer */
+.explore {
+    text-align: center;
+    font-family: monospace;
+    color: $cloudy;
+    margin-top: 80px;
+    word-break: break-all;
+}
+
+.explore-divider {
+    font-size: 18px;
+    letter-spacing: 8.18px;
+}
+
+.explore-label {
+    font-size: 14px;
+    margin-top: 15px;
+    font-family: monospace;
+}
+
+/* =Post page */
+.about {
+    color: $cloudy;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.about-divider {
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 9.09px;
+}
+
+.about-text {
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .navigation,
+    .social-links {
+        @include centered-block();
+    }
+
+    .wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .social-links {
+        font-size: 30px;
+        margin-top: 35px;
+    }
+
+    .page-title {
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    .page-title-text {
+        font-size: 40px;
+    }
+
+    .page-title-subtitle {
+        font-size: 18px;
+    }
+
+    .explore {
+        margin-top: 80px;
+    }
+
+    .post-title-text {
+        font-size: 28px;
+    }
+
+    .post-title-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 620px) {
+    input[type="text"] {
+        width: 80%;
+    }
+    input[type="text"]:focus {
+        width: 100%;
+    }
+}

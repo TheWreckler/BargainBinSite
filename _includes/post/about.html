@@ -1,0 +1,10 @@
+<div class="about">
+    <div class="about-divider">*****</div>
+    <div class="about-text">
+        Written by the pseudonymous<strong> {% if page.author.fullname %} {{ page.author.fullname }} {% else %} {{ site.author.fullname }} {% endif %}</strong>
+        on <span class="publish-date">{{ page.date | date: "%d %B %Y" }}</span>
+    </div>
+    <div class="explore-label">All content on this website is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> license.</div>
+    <div class="explore-label"><i>(unless otherwise stated)</i></div>
+</div>
+
