@@ -1,0 +1,22 @@
+{
+  "cards" :
+  [
+    {
+    "name": "Thread Items",
+      "description": "Thread Item Compendium",
+      "button_text": "Weave Thread",
+      "link": "https://bargainbin.quest/Earthdawn/Wiki/thread-items"
+    },
+    {
+    "name": "Goods & Services",
+      "description": "Adventuring Gear, Weapons, Armor, Etc",
+      "button_text": "Shop",
+      "link": "https://bargainbin.quest/Earthdawn/Wiki/goods-and-services"
+    }
+    "name": "Homebrew",
+      "description": "Homebrew specifically made for Bargain Bin campaigns,
+      "button_text": "Brew",
+      "link": "https://bargainbin.quest/Earthdawn/Wiki/homebrew"
+    }
+  ]
+}
