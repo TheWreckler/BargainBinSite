@@ -3,8 +3,8 @@ import json
 pages = [
     ('json/cards.json',          '_site/index.html',                          '<!-- Static cards -->'),
     ('json/earthdawn_cards.json','_site/Earthdawn/index.html',                '<!-- Earthdawn cards -->'),
-    ('json/maps_cards.json',     '_site/Earthdawn/Earthdawn/Maps/index.html',  '<!-- Maps cards -->')
-    ('json/wiki_cards.json',     '_site/Earthdawn/Wiki/index.html',  '<!-- Maps cards -->'),
+    ('json/maps_cards.json',     '_site/Earthdawn/Maps/index.html',  '<!-- Maps cards -->'),
+    ('json/wiki_cards.json',     '_site/Earthdawn/Wiki/index.html',  '<!-- Wiki cards -->'),
 ]
 
 def build_cards(data):

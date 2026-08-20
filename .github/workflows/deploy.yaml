@@ -25,6 +25,14 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Inject card content
+        run: python main.py
+
       - name: Deploy site
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:

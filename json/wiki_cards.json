@@ -12,9 +12,10 @@
       "description": "Adventuring Gear, Weapons, Armor, Etc",
       "button_text": "Shop",
       "link": "https://bargainbin.quest/Earthdawn/Wiki/goods-and-services"
-    }
+    },
+    {
     "name": "Homebrew",
-      "description": "Homebrew specifically made for Bargain Bin campaigns,
+      "description": "Homebrew specifically made for Bargain Bin campaigns",
       "button_text": "Brew",
       "link": "https://bargainbin.quest/Earthdawn/Wiki/homebrew"
     }
