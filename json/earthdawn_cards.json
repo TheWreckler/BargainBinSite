@@ -12,6 +12,12 @@
       "description": "Interactive Maps for our current Earthdawn Campaigns",
       "button_text": "Open Map",
       "link": "https://bargainbin.quest/Earthdawn/EarthdawnMaps"
+    },
+    {
+    "name": "Earthdawn Wikis",
+      "description": "Interactive Maps for our current Earthdawn Campaigns",
+      "button_text": "Explore",
+      "link": "https://bargainbin.quest/Earthdawn/Wiki"
     }
   ]
 }
