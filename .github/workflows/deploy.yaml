@@ -31,7 +31,7 @@ jobs:
           python-version: '3.12'
 
       - name: Inject card content
-        run: python main.py
+        run: python py/main.py
 
       - name: Deploy site
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
