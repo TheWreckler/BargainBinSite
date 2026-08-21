@@ -8,16 +8,17 @@ pages = [
 ]
 
 def build_cards(data):
-    text = ""
+    text = '<div class="card-row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">'
     for i in data["cards"]:
         text += f"""
     <div class="card">
         <h1>{i["name"]}</h1>
-        <p>{i["description"]}</p>
+        <p style="text-align: center;">{i["description"]}</p>
         <div class="buttons">
             <a href="{i["link"]}"><button class="button">{i["button_text"]}</button></a>
         </div>
     </div>"""
+    text += "</div>"
     return text
 
 for json_file, html_file, placeholder in pages:
